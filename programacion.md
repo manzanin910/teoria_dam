@@ -47,3 +47,4 @@
 ## - Tareas random para probar cosas quizá:
 
 - Hacer conversiones de binario a hexadecimal, luego a octal, y viceversa (probar y eso).
+- Aprender regex y hacer un comprobante de correo electrónico (intentar hacerlo sin regex y con regex).
