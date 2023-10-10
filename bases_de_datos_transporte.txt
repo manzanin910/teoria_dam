@@ -19,4 +19,49 @@ la referencia que vamos a capturar desde tb_camioneros (foreign key).
 cod_provincia de tb_provincias se comporta como la primary key, esta va a ser la referencia que
 vamos a capturar desde tb_paquetes_transportados.
 
+-------------------------------------------------------------------- TAREA PARA CASA:
+
+create table tb_paquete(
+id_paquete int primary key,
+descrip varchar(50),
+destinatario varchar(30),
+dir_destino varchar(40),
+id_camionero int,
+id_prov int,
+add constraint fk_camionero_paquete foreign key (id_camionero) references tb_camionero (id_camionero),
+add contraint fk_prov_paquete foreign key (id_prov) references tb_provincia (id_provincia)
+);
+
+create table tb_camionero(
+id_camionero int primary key,
+dni varchar(30),
+nombre varchar(30),
+telefono varchar(20),
+dir_camionero varchar(40),
+salario varchar(30)
+);
+
+create table tb_provincia(
+id_provincia int primary key,
+poblacion varchar(30),
+nom_provincia varchar(30),
+telefono varchar(20),
+dir_camionero varchar(40),
+salario varchar(30)
+);
+
+create table tb_camion(
+matricula varchar(30) primary key,
+modelo varchar(30),
+tipo varchar(20),
+potencia varchar(20)
+);
+
+create table tb_conduce(
+id_camionero int,
+id_camion int,
+add constraint fk_camionero_conduce foreign key id_camionero references tb_camionero(id_camionero),
+add contraint fk_camion_conduce foreign key id_camion references tb_camion(id_camion)
+);
+
                     
