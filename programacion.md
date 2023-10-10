@@ -41,3 +41,9 @@
 
 - Hacer el identificador de dni sin bucles, y con una sola función. No hace falta un bucle for, utiliza las letras como String y usa el index asociado al texto para
   comparar el modulo con la letra asociada. **// SOLUCIONADO;**
+
+  <-------------------------------------------------------------------------------------------------------------->
+
+## - Tareas random para probar cosas quizá:
+
+- Hacer conversiones de binario a hexadecimal, luego a octal, y viceversa (probar y eso).
