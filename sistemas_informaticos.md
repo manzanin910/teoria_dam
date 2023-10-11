@@ -128,7 +128,7 @@ par comunicar los distintos elementos.
   -> Un comando de linux siempre empieza por sudo => sudo lshw
 
 
->>>> [SOFTWARE]:
+## - SOFTWARE:
 
 - ¿Qué tipos de software hay?:
   -> De Sistema: sistemas operativos por ejemplo.
