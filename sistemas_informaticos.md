@@ -215,5 +215,5 @@ par comunicar los distintos elementos.
 - Para abrir el administrador de tareas desde la cmd poner: **taskmgr** (taskmanager).
 - Para abrir el administrador de dispositivos: **devmgmt** (device management).
 - En Linux se pone **sudo lshw**: "sudo" siempre se pone delante para ejecutar como administrador.
-- **Exportar una máquina virtual**: Apagar la máquina, click derecho y pon "exportar a OCI" (es una copia de seguridad de nuestra máquina). => meterlo en la práctica.
+- **Exportar una máquina virtual**: Apagar la máquina, click derecho y pon "exportar a OCI ¿qué es OCI?" (es una copia de seguridad de nuestra máquina). => meterlo en la práctica.
 - **Hacer una instantánea**: Click sobre "máquina", después en "herramientas" y pulsar "instantáneas". => meterlo en la práctica.
