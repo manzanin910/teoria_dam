@@ -207,4 +207,11 @@ par comunicar los distintos elementos.
 
 - UEFI (Unified Extensible Firmware Interface);
 
-- Si eliges la iso desde el menu de creación de máquina virtual se te instala automáticamente, para ver la configuración completa en la instalación de windows no se pone iso.
+> Si eliges la iso desde el menu de creación de máquina virtual se te instala automáticamente, para ver la configuración completa en la instalación de windows no se pone iso.
+
+## - PRACTICAS Y ACLARACIONES:
+
+- En la práctica poner los pasos para instalar una máquina virtual, con imágenes y demás.
+- Para abrir el administrador de tareas desde la cmd poner: taskmgr (taskmanager).
+- Para abrir el administrador de dispositivos: devmgmt (device management).
+- En Linux: sudo lshw => "sudo" siempre se pone delante para ejecutar como administrador
