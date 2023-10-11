@@ -212,7 +212,7 @@ par comunicar los distintos elementos.
 ## - PRACTICAS Y ACLARACIONES:
 
 - En la práctica poner los pasos para instalar una máquina virtual, con imágenes y demás.
-- Para abrir el administrador de tareas desde la cmd poner: taskmgr (taskmanager).
-- Para abrir el administrador de dispositivos: devmgmt (device management).
-- En Linux se pone sudo lshw: "sudo" siempre se pone delante para ejecutar como administrador.
-- Exportar una máquina virtual: Apagar la máquina, click derecho y pon "exportar a OCI" (es una copia de seguridad de nuestra máquina). => meterlo en la práctica.
+- Para abrir el administrador de tareas desde la cmd poner: **taskmgr** (taskmanager).
+- Para abrir el administrador de dispositivos: **devmgmt** (device management).
+- En Linux se pone **sudo lshw**: "sudo" siempre se pone delante para ejecutar como administrador.
+- **Exportar una máquina virtual**: Apagar la máquina, click derecho y pon "exportar a OCI" (es una copia de seguridad de nuestra máquina). => meterlo en la práctica.
