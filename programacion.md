@@ -46,7 +46,7 @@
 
 ## - Tareas random para probar cosas quizá:
 
-- Hacer conversiones de binario a hexadecimal, luego a octal, y viceversa (probar y eso).
+- Hacer conversiones de binario a hexadecimal, luego a octal, y viceversa (probar y eso). **// SOLUCIONADO;**
 - Aprender regex y hacer un comprobante de correo electrónico (intentar hacerlo sin regex y con regex).
 - Hacer un scanner que te pregunte que pongas un numero binario y que te pregunte a que quieres convertirlo.
 - Hacer el ejercicio de los datos personales (mirar en el aula virtual => scanner(pedir datos)).
