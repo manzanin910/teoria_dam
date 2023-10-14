@@ -28,8 +28,8 @@ destinatario varchar(30),
 dir_destino varchar(40),
 id_camionero int,
 id_prov int,
-add constraint fk_camionero_paquete foreign key (id_camionero) references tb_camionero (id_camionero),
-add contraint fk_prov_paquete foreign key (id_prov) references tb_provincia (id_provincia)
+constraint fk_camionero_paquete foreign key (id_camionero) references tb_camionero (id_camionero),
+constraint fk_prov_paquete foreign key (id_prov) references tb_provincia (id_provincia)
 );
 
 create table tb_camionero(
@@ -60,8 +60,8 @@ potencia varchar(20)
 create table tb_conduce(
 id_camionero int,
 id_camion int,
-add constraint fk_camionero_conduce foreign key id_camionero references tb_camionero(id_camionero),
-add contraint fk_camion_conduce foreign key id_camion references tb_camion(id_camion)
+constraint fk_camionero_conduce foreign key(id_camionero) references tb_camionero(id_camionero),
+constraint fk_camion_conduce foreign key(id_camion) references tb_camion(id_camion)
 );
 
                     
