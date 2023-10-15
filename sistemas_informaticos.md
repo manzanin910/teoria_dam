@@ -214,7 +214,12 @@ par comunicar los distintos elementos.
 - En la práctica poner los pasos para instalar una máquina virtual, con imágenes y demás.
 - Para abrir el administrador de tareas desde la cmd poner: **taskmgr** (taskmanager).
 - Para abrir el administrador de dispositivos: **devmgmt** (device management).
-- En Linux se pone **sudo lshw**: "sudo" siempre se pone delante para ejecutar como administrador.
+- En Linux se pone **sudo lshw**: "sudo" (superuser do) siempre se pone delante para ejecutar como administrador un comando, y "lshw" (list hardware) es para ver la información sobre el hardware del sistema.
 - **Exportar una máquina virtual**: Apagar la máquina, click derecho y pon "exportar a OCI ¿qué es OCI?" (es una copia de seguridad de nuestra máquina). => meterlo en la práctica.
+
+- Al exportar a OCI (Oracle Cloud Infrastructure), estoy creando una imagen de mi maquina virtual, que incluye todas mis configuraciones y datos. Esta imagen se almacena en los servidores de Oracle, y cuando
+  accedes a esta en tu equipo estas accediendo a tu maquina virtual a traves de una instancia que se ejecuta en los servidores de Oracle, al crear una instancia estas creando una copia funcional de tu maquina
+  virtual.
+
 - **Hacer una instantánea**: Click sobre "máquina", después en "herramientas" y pulsar "instantáneas". => meterlo en la práctica.
 - Formato vdi (Oracle VB).
