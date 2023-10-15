@@ -222,4 +222,4 @@ par comunicar los distintos elementos.
   virtual.
 
 - **Hacer una instantánea**: Click sobre "máquina", después en "herramientas" y pulsar "instantáneas". => meterlo en la práctica.
-- Formato vdi (Oracle VB).
+- Formato vdi (Oracle VB) => "vdi" quiere decir virtualBox disk image.
