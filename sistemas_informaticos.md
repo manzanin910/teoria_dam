@@ -19,7 +19,7 @@ par comunicar los distintos elementos.
 
 > Hablamos de los cores, los hilos. Los constructores (empresas) lo alteran para ganar en la competencia, pero todas las empresas se basan en el modelo de Von Neumann.
 
-## - Hardware de un SI:
+# - Hardware de un SI:
 
   > El microprocesador es la CPU, no el pc entero (obvio).
 
@@ -128,7 +128,7 @@ par comunicar los distintos elementos.
   -> Un comando de linux siempre empieza por sudo => sudo lshw
 
 
-## - SOFTWARE:
+# - SOFTWARE:
 
 - ¿Qué tipos de software hay?:
   -> De Sistema: sistemas operativos por ejemplo.
@@ -223,3 +223,31 @@ par comunicar los distintos elementos.
 
 - **Hacer una instantánea**: Click sobre "máquina", después en "herramientas" y pulsar "instantáneas". => meterlo en la práctica.
 - Formato vdi (Oracle VB) => "vdi" quiere decir virtualBox disk image.
+
+
+# - SISTEMAS OPERATIVOS:
+
+- Funciones basicas: interfaz usuario <--> hardware, y gestionar los recursos software y hardware.
+  
+## - ¿En que te fijas a la hora de elegir un sistema operativo?: 
+ - adaptabilidad, facilidad de uso y eficiencia (que gestione los recursos de la mejor manera)
+
+## - ¿Qué tiene que gestionar el so?: 
+ - **gestión de procesos** (un proceso es un programa que esta en memoria, que se esta ejecutando), **memoria**, **entradas y salidas**, **almacenamiento secundario**,
+   **seguridad**, **errores** (es imposible solventar absolutamente todos los errores, pero debe de haber una manera de gestionar algunos) y **gestionar la interfaz de usuario**.
+
+## - ¿Qué tipos de sistemas operativos hay?:
+ - Según el número de procesos a la vez: **monotarea** o **multitarea** (no tiene que ver con la cpu, tiene que ver con las limitaciones del sistema operativo). La idea es que pueden haber varias tareas
+   a la vez y la cpu reparte su tiempo en cada una de ellas (teniendo en cuenta de que solo hay un núcleo).
+
+ - Según el número de usuarios a la vez: **monousuario** (solo admite un usuario trabajando a la vez) o **multiusuario** (pueden haber varios usuarios trabajando a la vez).
+
+ - Según el tipo de procesamiento:
+   - **En tiempo real** (sistemas operativos en aviones, plantas nucleares...etc) => respuesta inmediata (crítico).
+   - **Interactivo**: sistemas operativos interactivos o de tiempo compartido.
+   - **Por lotes, batch o no interactivos**. **¿qué es el procesamiento por batch o por lotes?**
+
+ - Según interfaz: textuales (comandos), gráficos (con ventanitas). Antes los sistemas operativos eran textuales, en forma de comando.
+
+ - Según la forma de ofrecer los servicios: SO cliente (de escritorio), SO en red (de servidor) y SO distribuidos (ofrecen escalabilidad y confiabilidad => son sistemas bastante robustos).
+   
