@@ -50,4 +50,5 @@
 - Aprender regex y hacer un comprobante de correo electrónico (intentar hacerlo sin regex y con regex). 
 - Hacer un scanner que te pregunte que pongas un numero binario y que te pregunte a que quieres convertirlo. **// SOLUCIONADO;**
 - Hacer un conversor de binario a decimal, y decimal a hexadecimal manualmente. **// SOLUCIONADO;**
-- Mirar lo de double.NaN()...
+- Mirar lo de double.isNaN()... => clave del exito.
+- Hacer los ejercicios del https://notepad.pw/programacion2023.
