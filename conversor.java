@@ -27,7 +27,7 @@ public class conversor {
         StringBuilder almacenador = new StringBuilder();
         boolean myBreak = false;
 
-        while(decimal / 16 >= 0 && myBreak == false){
+        while(decimal / 16 >= 0 && !myBreak){
 
             int residuo = decimal % 16;
             String letras = "ABCDEF";
