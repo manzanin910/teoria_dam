@@ -142,3 +142,9 @@ IGNORE 1 LINES;
       > IMPORTANTE: Pon las barras ' / ' no ' \ '
 
 > O con show variables like 'local_infile' lo pones ON y pruebas (recuerda reiniciar el servidor de mySQL en el panel de control);
+
+<------------------------------------------------------------TAREAS PARA CASA:
+
+- Hacer el modelo entidad-relación (cardinalidad y modalidad) en el ejercicio de los camioneros.
+
+
