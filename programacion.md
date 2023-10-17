@@ -32,23 +32,35 @@
   para poder usar los metodos que residen en ella. Los metodos de una interfaz son abstractos, eso quiere decir que no contienen logica, la logica se la proporcionas tu
   al llamarlos (esta lógica se llama "implementación"). **// SOLUCIONADO;**
 
-- aprender regex (algo al menos).
+- aprender regex (algo al menos). ---> EN PROCESO;
 
-- ver lo de la biblia esa de java.
+- ver lo de la biblia esa de java. **// SOLUCIONADO;**
 
 - Clarificar lo del capicúa con while, usando un valor booleano que se llame "patrónEncontrado" y crear una condición para ambas respuestas. Si coincide o no (da igual
-  que sea corto).
+  que sea corto). **// SOLUCIONADO;**
 
 - Hacer el identificador de dni sin bucles, y con una sola función. No hace falta un bucle for, utiliza las letras como String y usa el index asociado al texto para
   comparar el modulo con la letra asociada. **// SOLUCIONADO;**
 
   <-------------------------------------------------------------------------------------------------------------->
 
-## - Tareas random para probar cosas quizá:
+## - Tareas random para probar cosas:
 
 - Hacer conversiones de binario a hexadecimal, luego a octal, y viceversa (probar y eso). **// SOLUCIONADO;**
 - Aprender regex y hacer un comprobante de correo electrónico (intentar hacerlo sin regex y con regex). 
 - Hacer un scanner que te pregunte que pongas un numero binario y que te pregunte a que quieres convertirlo. **// SOLUCIONADO;**
 - Hacer un conversor de binario a decimal, y decimal a hexadecimal manualmente. **// SOLUCIONADO;**
-- Mirar lo de double.isNaN()... => clave del exito.
-- Hacer los ejercicios del https://notepad.pw/programacion2023.
+- Mirar lo de double.isNaN()... => clave del exito. **// SOLUCIONADO;**
+- Hacer los ejercicios del https://notepad.pw/programacion2023. **// SOLUCIONADO;**
+
+<-------------------------------------------------------------------------------------------------------------->
+
+## - Mejoras de código:
+
+- Modificar la parte de conversor.java que va desde la linea 32 a la linea 41. Intentar incluir en las letras también los números, así te saltas la sincronización (me refiero a sincronizar el resto
+  con las letras, empezando desde 0).
+
+- Crear un conversor de decimal a octal (deberia ser más sencillo que en hexadecimal).
+
+- Cambiar la forma de hacer lo de los números consecutivos, hacerlo con if y eso.
+
