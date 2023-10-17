@@ -60,7 +60,11 @@
 - Modificar la parte de conversor.java que va desde la linea 32 a la linea 41. Intentar incluir en las letras también los números, así te saltas la sincronización (me refiero a sincronizar el resto
   con las letras, empezando desde 0).
 
-- Crear un conversor de decimal a octal (deberia ser más sencillo que en hexadecimal).
+- Cambiar la forma de hacer lo de los números consecutivos, hacerlo con if y eso. **// SOLUCIONADO;**
 
-- Cambiar la forma de hacer lo de los números consecutivos, hacerlo con if y eso.
+<-------------------------------------------------------------------------------------------------------------->
+
+## - Desafíos mayores:
+
+- Hacer el ejercicio de la simulación del universo esta rara.
 
