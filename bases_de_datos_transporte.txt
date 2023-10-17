@@ -64,4 +64,9 @@ constraint fk_camionero_conduce foreign key(id_camionero) references tb_camioner
 constraint fk_camion_conduce foreign key(id_camion) references tb_camion(id_camion)
 );
 
+
+<------------- apuntes temporales:
+
+- La cardinalidad indica los maximos que se pueden presentar, y la modalidad sirve para indicar los minimos.
+
                     
