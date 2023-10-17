@@ -250,4 +250,17 @@ par comunicar los distintos elementos.
  - Según interfaz: textuales (comandos), gráficos (con ventanitas). Antes los sistemas operativos eran textuales, en forma de comando.
 
  - Según la forma de ofrecer los servicios: SO cliente (de escritorio), SO en red (de servidor) y SO distribuidos (ofrecen escalabilidad y confiabilidad => son sistemas bastante robustos).
+
+## - ¿Qué arquitecturas de sistemas operativos existen? Explica los detalles de cada uno:
+- **Sistemas con capas** => compuesto por tres niveles nucleo (kernel => existe una subcapa dentro que se llama HAL, este es independiente de la máquina), gestión de servicios
+  e interfaz (al mismo nivel que las aplicaciones del usuario, solo que estas no forman parte del SO).
+
+- **Sistemas monolíticos** => el SO esta compuesto por una unica estructura (todas las capas en una). Un sistema monolítico esta compuesto por un único programa y todas las subrutinas
+  se ejecutan en modo supervisor (no se pueden cambiar permisos).
+
+- **Microkernel (micronúcleo)** => Se libera al nucleo de todas las funcionalidades posibles, se lo deja al usuario. Ejemplo: MINIX.
+
+- **Kernel híbrido** => Se mezcla el diseño del microkernel y la implementación monolítica. Ejemplo: Mac OS y Windows.
+
+- Ejemplos arcaicos de sistemas por capas: THE y MULTICS (SO's).
    
