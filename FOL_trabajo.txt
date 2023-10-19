@@ -7,4 +7,4 @@ Pag 140 => hacer una matriz de prevencion de riesgos laborales:
 
 Adaptar la información a la empresa que pensemos.
 
-- Hacer un plan de emergencia.
+- Hacer un plan de emergencia (en una diapositiva, un pequeño plan de emergencias).
