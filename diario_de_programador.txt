@@ -1,0 +1,21 @@
+- Proyecto 1: Simulación del universo (choque de galaxias en un espacio tridimensional):
+
+-> En el día 1 he decidido informarme un poco sobre los arrays tridimensionales y recordar del pasado el uso del array bidimensional, ciertamente iba a hacerlo en 2D primero para
+   empezar con buen pie, pero ya no va a hacer falta porque he aclarado muchas cosas sobre la representación en 3D en la consola.
+
+-> Lo primero que he hecho es inicializar un tablero, esto yo ya lo sabia porque ya tenia experiencia con otro proyecto que hice en javascript parecido. Lo que pasa es que este
+   proyecto es mas complejo porque estamos trabajando en tres dimensiones, con el anterior de javascript solo trabajaba con dos dimensiones (y se me hacia dificil xd). Ahora bien,
+   ¿porque inicializar un tablero? Esto es porque necesitamos una plantilla con espacios en blanco (o puntos mejor) que cumpla con la cantidad de filas, columnas y profundidad que querramos,
+   en este caso es 10x10x10 (rows, cols, depth). Hay que tener en cuenta que para inicializar un tablero en 3D necesitamos usar bucles anidados, es decir, un bucle for que itere
+   por 'x', luego crear uno anidado a este que itere por 'y', y después otro más por 'z' (esto es para lograr tener un control de todas las dimensiones y poder añadir A
+   CADA ELEMENTO un espacio en blanco, para luego poder sustituirlos por las fichas que yo quiera => galaxias con peso aleatorio entre 1 y 5). Cabe recalcar que el inicializar
+   el tablero será un método que no retornará nada, esto es así porque lo que hacemos es modificar el parametro que es una referencia al array 3D que hemos creado anteriormente,
+   por tanto no hace falta retonarlo porque se reflejará en el array original.
+
+-> Lo segundo que he hecho es imprimir el tablero, esta parte era bastante jodida al principio porque no sabia como simular tres dimensiones en una consola de dos dimensiones.
+   Recordé lo de las rebanadas de pan pero aun así no lo entendía, ¿qué cojones significa eso? hasta que después de investigar me di cuenta de lo que se refería. El objetivo de
+   de imprimir el tablero es conseguir imprimir en la consola una vista ENTENDIBLE del escenario de juego, eso significaba que las filas tenían que apilarse creando columnas,
+   y eso era fácil, simplemente usé println. ¿Y con z, que haces con eso? Pues utilizamos secciones que actuen como rebanadas de pan, estas secciones muestran la profundidad del
+   cubo (esto proporciona una vista posible en 2D, y por tanto, en la consola), cada sección muestra su propio 'x' e 'y', por tanto la iteración de 'z' englobaba tanto a la
+   iteración de 'x' como a la de 'y'. Al final, en la última iteración, simplemente imprimimos el escenario completo (x,y,z).
+   
