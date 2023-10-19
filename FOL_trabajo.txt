@@ -6,3 +6,5 @@ Pag 140 => hacer una matriz de prevencion de riesgos laborales:
 - Medidas preventivas => Formas para evitar accidentes.
 
 Adaptar la información a la empresa que pensemos.
+
+- Hacer un plan de emergencia.
