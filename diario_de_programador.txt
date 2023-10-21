@@ -18,4 +18,13 @@
    y eso era fácil, simplemente usé println. ¿Y con z, que haces con eso? Pues utilizamos secciones que actuen como rebanadas de pan, estas secciones muestran la profundidad del
    cubo (esto proporciona una vista posible en 2D, y por tanto, en la consola), cada sección muestra su propio 'x' e 'y', por tanto la iteración de 'z' englobaba tanto a la
    iteración de 'x' como a la de 'y'. Al final, en la última iteración, simplemente imprimimos el escenario completo (x,y,z).
+
+-> En el día 2 decidí seguir con la generación aleatoria de números que simularían las galaxias con un peso determinado. Al principio pensé que iba a ser sencillo, pero conforme me fui dando cuenta
+   de ciertas cosas, caí en la cuenta de las posibilidades. Me explico, intenté en printGrid generar los números aleatorios, pero me di cuenta de que si lo hacia de esta manera:
+   grid[x][y][z] = ... (random), se generarían números aleatorios en TODAS LAS CASILLAS (obviamente no quería eso, quería limitar el número de galaxias que aparecian, pero que el peso fuese
+   aleatorio entre una franja de números de un solo dígito). Pensando me di cuenta del asunto, si quería decidir el número de galaxias que se iban a generar tendría que usar un bucle que parase cuando
+   alcanzara el número deseado. Y así lo hice, en un principio pensé en crear un mecanismo para evitar pesos duplicados, ciertamente hay muchas formas de evitar duplicaciones, una de ellas es usar
+   un HashMap que almacene los valores como clave y el numero de repeticiones como valor, y otra era usar un conjunto (Set). Los conjuntos son agrupaciones de valores que no pueden estar duplicados,
+   e intente usarlo para generar pesos únicos, pero no me acabó convenciendo, quizá en un futuro lo implemento si me apetece, pero en la actualidad no considero que sea una obligación que los valores
+   no esten duplicados en el tablero, si veo que da problemas lo cambiaré, pero no creo. En el bucle tuve que crear un randomizador de cada posición y otro para cada peso, y después colocarlo en el grid.
    
