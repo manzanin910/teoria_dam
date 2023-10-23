@@ -54,11 +54,26 @@ potencia varchar(20)
 );
 
 create table tb_conduce(
+fecha date,
 dni varchar(30),
 matricula varchar(30),
 constraint fk_camionero_conduce foreign key(dni) references tb_camionero(dni),
 constraint fk_camion_conduce foreign key(matricula) references tb_camion(matricula)
 );
+
+
++------------------------------+
+| Tables_in_db_transportes_two |
++------------------------------+
+| tb_camion                    |
+| tb_camionero                 |
+| tb_conduce                   |
+| tb_paquete                   |
+| tb_provincia                 |
++------------------------------+
+
+
+
 
 
 <------------- apuntes temporales:
