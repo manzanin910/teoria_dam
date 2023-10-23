@@ -22,32 +22,28 @@ vamos a capturar desde tb_paquetes_transportados.
 -------------------------------------------------------------------- TAREA PARA CASA:
 
 create table tb_paquete(
-id_paquete int primary key,
+cod_paquete int primary key,
 descrip varchar(50),
 destinatario varchar(30),
 dir_destino varchar(40),
-id_camionero int,
-id_prov int,
-constraint fk_camionero_paquete foreign key (id_camionero) references tb_camionero (id_camionero),
-constraint fk_prov_paquete foreign key (id_prov) references tb_provincia (id_provincia)
+dni varchar(30),
+cod_prov int,
+constraint fk_camionero_paquete foreign key (dni) references tb_camionero (dni),
+constraint fk_prov_paquete foreign key (cod_prov) references tb_provincia (cod_prov)
 );
 
 create table tb_camionero(
-id_camionero int primary key,
-dni varchar(30),
+dni varchar(30) primary key,
 nombre varchar(30),
 telefono varchar(20),
 dir_camionero varchar(40),
-salario varchar(30)
+salario varchar(30),
+poblac varchar(40)
 );
 
 create table tb_provincia(
-id_provincia int primary key,
-poblacion varchar(30),
-nom_provincia varchar(30),
-telefono varchar(20),
-dir_camionero varchar(40),
-salario varchar(30)
+cod_prov int primary key,
+nombre varchar(30)
 );
 
 create table tb_camion(
@@ -58,10 +54,10 @@ potencia varchar(20)
 );
 
 create table tb_conduce(
-id_camionero int,
-id_camion int,
-constraint fk_camionero_conduce foreign key(id_camionero) references tb_camionero(id_camionero),
-constraint fk_camion_conduce foreign key(id_camion) references tb_camion(id_camion)
+dni varchar(30),
+matricula varchar(30),
+constraint fk_camionero_conduce foreign key(dni) references tb_camionero(dni),
+constraint fk_camion_conduce foreign key(matricula) references tb_camion(matricula)
 );
 
 
