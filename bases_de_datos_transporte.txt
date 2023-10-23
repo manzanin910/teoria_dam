@@ -73,7 +73,30 @@ constraint fk_camion_conduce foreign key(matricula) references tb_camion(matricu
 +------------------------------+
 
 
-load data infile 
+load data infile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/camionero.csv'
+into table tb_camionero
+fields terminated by ','
+lines terminated by '\n';
+
+load data infile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/provincia.csv'
+into table tb_provincia
+fields terminated by ','
+lines terminated by '\n';
+
+load data infile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/paquete.csv'
+into table tb_paquete
+fields terminated by ','
+lines terminated by '\n';
+
+load data infile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/camion.csv'
+into table tb_camion
+fields terminated by ','
+lines terminated by '\n';
+
+load data infile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/conduce.csv'
+into table tb_conduce
+fields terminated by ','
+lines terminated by '\n';
 
 
 <------------- apuntes temporales:
