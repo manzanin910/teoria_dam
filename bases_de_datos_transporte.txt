@@ -73,7 +73,7 @@ constraint fk_camion_conduce foreign key(matricula) references tb_camion(matricu
 +------------------------------+
 
 
-
+load data infile 
 
 
 <------------- apuntes temporales:
