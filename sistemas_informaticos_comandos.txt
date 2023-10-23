@@ -5,4 +5,11 @@
 -> Instalaciones desatendidas, los clientes deben tener activa una cosa llama PXE => se activa en la BIOS (arranque por PXE, (a través de la red)).
 
 
+-> ¿que significa apt?
+
+sudo apt update
+sudo apt install <nombre paquete>
+sudo apt upgrade
+
+sudo apt remove <nombre paquete>
 
