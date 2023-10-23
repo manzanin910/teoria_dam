@@ -1,1 +1,8 @@
-- DIFERENTES COMANDOS DE UBUNTU:
+- DIFERENTES COMANDOS DE UBUNTU O DEMÁS:
+
+-> En Ubuntu se suelen instalar los "Guest Additions" (ver que verga es esto).
+
+-> Instalaciones desatendidas, los clientes deben tener activa una cosa llama PXE => se activa en la BIOS (arranque por PXE, (a través de la red)).
+
+
+
