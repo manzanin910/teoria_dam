@@ -6,8 +6,10 @@
 
 
 -> ¿que significa apt?
+-> ¿que paquetes son gjs, irqbalance, libgjs0g?
 
 sudo apt update
+apt list --upgradable
 sudo apt install <nombre paquete>
 sudo apt upgrade
 
