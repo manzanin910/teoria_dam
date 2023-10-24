@@ -69,4 +69,5 @@
 - Hacer el ejercicio de la simulación del universo esta rara.
 - Notas: -> Los pesos sumados tendrán un máximo de 9, a partir de 9 no pasa nada (se trata el 9 como peso infinito).
          -> Usar caracteres (mejor no usar String, da problemas).
+         -> Ver que cojones es recursividad.
 
