@@ -27,4 +27,13 @@
    un HashMap que almacene los valores como clave y el numero de repeticiones como valor, y otra era usar un conjunto (Set). Los conjuntos son agrupaciones de valores que no pueden estar duplicados,
    e intente usarlo para generar pesos únicos, pero no me acabó convenciendo, quizá en un futuro lo implemento si me apetece, pero en la actualidad no considero que sea una obligación que los valores
    no esten duplicados en el tablero, si veo que da problemas lo cambiaré, pero no creo. En el bucle tuve que crear un randomizador de cada posición y otro para cada peso, y después colocarlo en el grid.
+
+-> En el día 3 no he hecho nada en el código como tal, solo estuve probando y viendo a ver como podía planear los desplazamientos de los números. Hay que tener en cuenta que necesito desplazar un número
+   hacia uno que sea mayor y que esté más cerca que los demás. Lo que se me ocurrió fue crear una función que te dijese las coordenadas en el tablero de la celda donde se encontraba el número mayor, pero
+   solo se me ocurría un método para hallar el número mayor en las celdas circundantes del número en cuestión. Ya que usaba desplazamientos que iban de -1 a 1 en todas las direcciones (solo 1 unidad).
+   BUENAS NOTICIAS, he conseguido hacer una función que me detecte si hay un numero mayor partiendo de cualquier numero, al final es mucho mas facil de lo que pensaba. O sea, yo intentaba conseguirlo por
+   desplazamientos, donde sumaba el desplazamiento en x,y,z y examinaba si existia en posiciones circundantes un valor mayor, pero era muy limitante, de normal se usa para examinar celdas circundantes que
+   estan a 1 unidad de la celda central, en este caso no rentaba. Era mucho mas facil aprovecharme del tamaño escaso (10x10x10) para examinar todas las celdas posibles en todas las dimensiones partiendo
+   desde un numero, simplemente usar bucles anidados y comparar el grid[x][y][z] con el numero en cuestion, en este caso si es mas grande y meterlo en un array de coordenadas o string (para prueba). ¡Solo
+   faltan los desplazamientos! Ahora se van facilitando las cosas.
    
