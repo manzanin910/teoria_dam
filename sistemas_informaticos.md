@@ -263,4 +263,9 @@ par comunicar los distintos elementos.
 - **Kernel híbrido** => Se mezcla el diseño del microkernel y la implementación monolítica. Ejemplo: Mac OS y Windows.
 
 - Ejemplos arcaicos de sistemas por capas: THE y MULTICS (SO's).
+
+- Multitarea = de tiempo compartido
+
+- En el examen van a haber preguntas referente a UEFI (bastantes)
+
    
