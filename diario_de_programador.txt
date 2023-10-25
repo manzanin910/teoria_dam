@@ -36,4 +36,12 @@
    estan a 1 unidad de la celda central, en este caso no rentaba. Era mucho mas facil aprovecharme del tamaño escaso (10x10x10) para examinar todas las celdas posibles en todas las dimensiones partiendo
    desde un numero, simplemente usar bucles anidados y comparar el grid[x][y][z] con el numero en cuestion, en este caso si es mas grande y meterlo en un array de coordenadas o string (para prueba). ¡Solo
    faltan los desplazamientos! Ahora se van facilitando las cosas.
+
+-> En el día 4 he tenido que arreglar la función que hice en el día 3 ya que solo estaba buscando entre todo el tablero un número más grande que el inicial, y no es lo que hay que hacer. Lo ideal es buscar
+   el número más cercano al inicial y que sea más grande para después realizar el desplazamiento. El concepto era sencillo, necesitaba calcular la distancia entre dos puntos, el número inicial y los números
+   cercanos. Para ello, iba a necesitar hacer un seguimiento de la distancia más pequeña para confirmar que lo sea de verdad y mostrar las coordenadas. Lo comparé con un número límite, puede ser cualquiera que
+   sea lo suficientemente grande como para no fastidiar en la comparación, necesitaba que en la primera iteración el número inicial fuese más pequeño para guardarlo en el número límite y en la segunda iteración 
+   comprarlo con la siguiente distancia, eso me confirmaría encontrar SI O SI la distancia más pequeña (es complicado explicarlo pero luego en la práctica se ve fácil). Al principio me dió problemas porque no me
+   mostraba las coordenadas correctamente, eso era porque no estaba buscando el número más cercano y MÁS GRANDE que el inicial, se me había olvidado la condición de que tenía que ser más grande necesariamente que
+   el inicial. ¡Listo! Ahora sí, podemos seguir con las generaciones y desplazamientos (si Dios quiere).
    
