@@ -44,4 +44,6 @@
    comprarlo con la siguiente distancia, eso me confirmaría encontrar SI O SI la distancia más pequeña (es complicado explicarlo pero luego en la práctica se ve fácil). Al principio me dió problemas porque no me
    mostraba las coordenadas correctamente, eso era porque no estaba buscando el número más cercano y MÁS GRANDE que el inicial, se me había olvidado la condición de que tenía que ser más grande necesariamente que
    el inicial. ¡Listo! Ahora sí, podemos seguir con las generaciones y desplazamientos (si Dios quiere).
+
+-> Anotación: si, tenia razon, solo identifica el mas grande no el mas cercano soy gilipollas.
    
