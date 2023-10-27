@@ -45,5 +45,12 @@
    mostraba las coordenadas correctamente, eso era porque no estaba buscando el número más cercano y MÁS GRANDE que el inicial, se me había olvidado la condición de que tenía que ser más grande necesariamente que
    el inicial. ¡Listo! Ahora sí, podemos seguir con las generaciones y desplazamientos (si Dios quiere).
 
--> Anotación: si, tenia razon, solo identifica el mas grande no el mas cercano soy gilipollas.
+-> Anotación: si, tenia razon, solo identifica el más grande no el más cercano soy gilipollas.
+
+-> Día 5, terrible. Hoy he estado intentando hacer el desplazamiento de los valores sobre el tablero y esta siendo una experiencia confusa. Cuando hice el juego de la vida, los desplazamientos eran según el 
+   número de vecinos que hubiera en el area circundante, en ese caso moriría la celula central o viviría, sustituyendo el 0 por el 1 o viceversa. Pero aquí se trata de hacer que el número se mueva con un sentido
+   y una dirección. Tenemos como punto de referencia el valor cercano y mayor con la función que hice la última vez, pero necesito entender como desplazar un número sobre un tablero para que vaya reduciendo la
+   distancia y llege al valor en cuestión. Está claro que necesito trabajar con desplazamientos y para ello necesito todos los desplazamientos posibles para crear una nueva X, una nueva Y y una nueva Z que
+   represente la nueva posición, con los límites claros para que no se salga del tablero. Pero aún esta la incógnita de como cojones creo la lógica siguiente.
+
    
