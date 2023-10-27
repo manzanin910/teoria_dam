@@ -53,4 +53,4 @@
    distancia y llege al valor en cuestión. Está claro que necesito trabajar con desplazamientos y para ello necesito todos los desplazamientos posibles para crear una nueva X, una nueva Y y una nueva Z que
    represente la nueva posición, con los límites claros para que no se salga del tablero. Pero aún esta la incógnita de como cojones creo la lógica siguiente.
 
-   
+-> -> Anotación: almacenar el valor de newX, newY, newZ en x,y,z cuando se cumplan las condiciones.
