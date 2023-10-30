@@ -53,4 +53,9 @@
    distancia y llege al valor en cuestión. Está claro que necesito trabajar con desplazamientos y para ello necesito todos los desplazamientos posibles para crear una nueva X, una nueva Y y una nueva Z que
    represente la nueva posición, con los límites claros para que no se salga del tablero. Pero aún esta la incógnita de como cojones creo la lógica siguiente.
 
--> -> Anotación: almacenar el valor de newX, newY, newZ en x,y,z cuando se cumplan las condiciones.
+-> Día 6, LO HE CONSEGUIDO. Me ha costado llegar a la fórmula para conseguir hacer la función del desplazamiento, si lo analizas bien no era tan complicado. Lo primero que he hecho es seguir la idea de que
+   necesito encontrar el desplazamiento que disminuya la distancia entre ambos objetivos. Para ello necesitaba crear un sistema parecido al que usé en la anterior función, necesitaba almacenar la distancia posible
+   en cada desplazamiento y compararla con la distancia original que se consigue en la anterior función. También era necesario hacer un seguimiento de la nueva distancia (ya sabes lo que significa eso), para
+   que se vaya actualizando y poder seguir comprobando que se cumple. Y ya después, una vez comprobado que ese desplazamiento es válido, se sustituyen los valores nuevos con los antiguos para que se guarde
+   esa posición. ¡Falta muy poco! Solo falta hacer la suma cuando esten cerca.
+ 
