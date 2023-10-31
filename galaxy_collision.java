@@ -18,6 +18,7 @@ public class galaxy_collision{
 
         grid[1][2][3] = '6';
         grid[7][5][3] = '2';
+        grid[8][2][3] = '3';
        
         /* 
         // generador de galaxias en posiciones y pesos aleatorios;
@@ -35,6 +36,8 @@ public class galaxy_collision{
         }*/
 
         for(int gen = 1; gen <= numberOfGen; gen++){
+
+            clearConsole();
             System.out.println("<------------------<{Generación " + gen + "}>------------>");
             printGrid(grid);
 
@@ -86,7 +89,7 @@ public class galaxy_collision{
     }
 
     // encuentra el número más cercano y grande con un target de referencia;
-    public static int LargeAndCloseNumberFinder(char grid[][][], int x, int y, int z){
+    public static int LargeAndCloseNumberFinder(char[][][] grid, int x, int y, int z){
 
         int distanciaMasCercana = 0;;
         int maxDistance = 80; // cualquier número grande para comparar después;
@@ -117,15 +120,19 @@ public class galaxy_collision{
     // Desplazamiento de la galaxia hacia otra según la distancia a la que está;
     public static void Displacement(int x, int y, int z, char[][][] grid, int distance){
 
+        // desplazamientos (en z solo queremos que vaya hacia adelante y hacia atrás);
         int[] dx = { -1, -1, -1, 0, 0, 1, 1, 1, 0, 0, 0, 0 };
         int[] dy = { -1, 0, 1, -1, 1, -1, 0, 1, 0, 0, 0, 0 };
         int[] dz = { 0, 0, 0, 0, 0, 0, 0, 0, -1, 1, 0, 0 };
 
+        // Contenedores de coordenadas (se van actualizando según la posición);
         int X = x;
         int Y = y;
         int Z = z;
 
         for(int i = 0; i < 12; i++){
+
+            // siguiente posición;
             int newX = x + dx[i];
             int newY = y + dy[i];
             int newZ = z + dz[i];
@@ -141,13 +148,53 @@ public class galaxy_collision{
                     Y = newY;
                     Z = newZ;
                 }
+
+                if (newDistance == 1 && grid[newX][newY][newZ] != '.' && grid[x][y][z] != '.') {
+
+                    // Convertir caracteres a enteros y sumarlos;
+                    int sum = Character.getNumericValue(grid[x][y][z]) + Character.getNumericValue(grid[newX][newY][newZ]);
+
+                    // queremos restringir que la suma solo sea en un rango de 0 y 9;
+                    if (sum >= 0 && sum <= 9) {
+                        
+                        grid[X][Y][Z] = String.valueOf(sum).charAt(0);
+
+                        // queremos que el anterior valor no siga en el tablero;
+                        grid[newX][newY][newZ] = '.';
+                    }else{
+                        grid[X][Y][Z] = '9';
+
+                        grid[newX][newY][newZ] = '.';
+                    }
+                }
             }
         }
 
+        // si la celda destino es '.' significa que el valor no se ha movido como debería;
         if (grid[X][Y][Z] == '.'){
 
+            // copiamos el VALOR a la posición en donde debería estar, estamos sustituyendo el '.' por el número en cuestión;
             grid[X][Y][Z] = grid[x][y][z];
-            grid[x][y][z] = '.';  // Restablece el espacio original como vacío;
+
+            // Restablece el espacio original como vacío;
+            grid[x][y][z] = '.';
+        }
+        
+    }
+
+    public static void clearConsole() {
+
+        try {
+            final String os = System.getProperty("os.name"); // identifica el sistema operativo (en este caso Windows);
+
+            // si es Windows, ejecuta el proceso de abajo;
+            if(os.contains("Windows")) {
+
+                // Se ejecuta en la cmd, se usa "/c" para indicarle que cierre después de completar, y "cls" que es lo que se ejecuta para limpiar la consola;
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            } 
+        } catch (Exception e) {
+            // toda excepción;
         }
         
     }
