@@ -14,3 +14,16 @@ sudo apt install <nombre paquete>
 sudo apt upgrade
 sudo apt remove <nombre paquete>
 
+
+cd .. (directorio padre)
+cd. (directorio hijo)
+
+cd / => cambia al directorio raiz (change directory)
+cd ~ => cambia al directorio actual.
+
+ls (linux) => enlista todos los archivos de la carpeta donde los encontremos (list files).
+dir (windows) => lo mismo pero en windows, mustra los archivos y demás.
+
+mkdir [nombre de directorio] (linux) => crear directorios o archivos (make directory).
+md dir (windows) => lo mismo pero en windows, para crear directorios o archivos.
+
