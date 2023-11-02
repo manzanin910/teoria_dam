@@ -8,13 +8,16 @@
 -> ¿que significa apt?
 -> ¿que paquetes son gjs, irqbalance, libgjs0g?
 
+--- Comandos para actualizaciones e instalación de paquetes del sistema ---
 sudo apt update
 apt list --upgradable
-sudo apt install <nombre paquete>
-sudo apt upgrade
+sudo apt install [nombre paquete]
+sudo apt upgrade => para actualizar la version del sistema operativo (no usar de normal).
 sudo apt remove <nombre paquete>
 
 
+
+--- Comandos para acceso de archivos y directorios ---
 cd .. (directorio padre)
 cd. (directorio hijo)
 
@@ -26,4 +29,28 @@ dir (windows) => lo mismo pero en windows, mustra los archivos y demás.
 
 mkdir [nombre de directorio] (linux) => crear directorios o archivos (make directory).
 md dir (windows) => lo mismo pero en windows, para crear directorios o archivos.
+
+
+
+--- Directorios importantes de LINUX ---
+/bin => donde se encuentran los ejecutables (binary)
+/sbin => ejecutables del sistema (binary)
+/boot => para el arranque del sistema.
+/dev => donde se encuentran los archivos del sistema (device).
+/home => espacio reservado para el usuario.
+/lib => librerias necesarias para que funcionen los ejecutables.
+/root => directorio del superusuario.
+/tmp => ("temp" de temporal) archivos temporales.
+swapfile => fichero de intercambio de memoria.
+
+
+
+--- Directorios importantes de WINDOWS ---
+\Archivos de Programa => programas instalados.
+\Archivos de Programa (x86) => utilizada para almacenar programas de 32 bits (si tu sistema es de 64 bits)
+\ProgramData => Es una carpeta oculta que contiene datos que necesitan las aplicaciones.
+\PerfLogs => registro de rendimiento de SO.
+\Usuarios
+\Windows\System32 => contiene las DLL (librerías) según la versión en uso (64 o 32 bits).
+\Windows\SysWOW64 => Solo sale en dispositivos en 64 bits, solo almacena DLL de 32 bits.
 
