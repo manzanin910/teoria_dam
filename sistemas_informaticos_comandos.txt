@@ -54,3 +54,13 @@ swapfile => fichero de intercambio de memoria.
 \Windows\System32 => contiene las DLL (librerías) según la versión en uso (64 o 32 bits).
 \Windows\SysWOW64 => Solo sale en dispositivos en 64 bits, solo almacena DLL de 32 bits.
 
+
+
+--- Propiedades de comandos (LISTA) (Se pueden combinar) ---
+ls -l => lista en formato largo con todos los datos.
+ls -lh => lista en formato largo y con el peso de cada fichero.
+ls -s => lista con el tamaño en bloques (es el peso también).
+ls -a => incluye los archivos ocultos (lo hace con puntos);
+ls -i => incluye el numero de i-nodo (el identificador del i-nodo) de cada archivo.
+ls -R => lista recursivamente el contenido.
+
