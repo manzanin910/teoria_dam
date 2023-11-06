@@ -19,7 +19,7 @@ sudo apt remove <nombre paquete>
 
 --- Comandos para acceso de archivos y directorios ---
 cd .. (directorio padre)
-cd. (directorio hijo)
+cd . (directorio hijo)
 
 cd / => cambia al directorio raiz (change directory)
 cd ~ => cambia al directorio actual.
@@ -68,6 +68,6 @@ ls -R => lista recursivamente el contenido.
 
 --- Gestión de archivos por comandos en Linux ---
 touch [nombre_fichero] => crear un nuevo fichero.
-ln [nombre_fichero] [nombre_enlace] => para crear enlaces duros (actua como una copia).
+ln [nombre_fichero] [nombre_enlace] => para crear enlaces duros (actua como una copia) (ln => link)
 ln -s [nombre_fichero] [nombre_enlace] => enlace blando o simbólico (solo actua como referencia o acceso directo).
 
