@@ -25,10 +25,10 @@ cd / => cambia al directorio raiz (change directory)
 cd ~ => cambia al directorio actual.
 
 ls (linux) => enlista todos los archivos de la carpeta donde los encontremos (list files).
-dir (windows) => lo mismo pero en windows, mustra los archivos y demás.
+dir (windows) => lo mismo pero en windows, muestra los archivos y demás.
 
-mkdir [nombre de directorio] (linux) => crear directorios o archivos (make directory).
-md dir (windows) => lo mismo pero en windows, para crear directorios o archivos.
+mkdir [nombre de directorio] (linux) => crear directorios (make directory).
+md dir (windows) => lo mismo pero en windows, para crear directorios.
 
 
 
