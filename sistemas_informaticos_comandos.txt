@@ -93,3 +93,8 @@ cp -i ... => pide confirmación.
 cp -r ... => copia todos los directorios, subdirectorios y ficheros a un destino.
 
 
+
+--- Mover y renombrar archivos y directorios (la diferencia entre copiar y mover es que mover elimina el original) ---
+mv [lista_ficheros_origen] [destino] => para mover archivos y directorios.
+mv -i ... => pide confirmación al moverlo.
+mv -u ... => cuando hay un archivo o directorio con el mismo nombre que en origen, solo lo mueve a destino si el de origen es mas reciente.
