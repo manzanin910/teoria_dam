@@ -79,3 +79,8 @@ rm -i => pide confirmación antes de borrar.
 rm -f => para forzar el borrado (por si está protegido).
 rm -r => para borrar recursivamente ficheros y directorios (se supone que es peligroso).
 
+--- Wildcards (comodines) ---
+* => todos lo ficheros ; ejemplo: rm fich* => todos los ficheros que empiecen por "fich" me los borra. ; rm fich*txt => todos los ficheros que empiecen por fich y acaben por txt me los borra.
+? => solo sustituye a un caracter ; ejemplo: rm fichero? => me borraría todos los ficheros que se llamen "fichero" + una letra => fichero1, fichero2.
+
+
