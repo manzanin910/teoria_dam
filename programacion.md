@@ -80,7 +80,10 @@
 3 1
 5 3 1
 7 5 3 1
-9 7 5 3 1
+9 7 5 3 1 => **// SOLUCIONADO;**
 
-- Escribir un programa que pida al usuario un número entero y muestre por pantalla si es un número primo o no.
+- Escribir un programa que pida al usuario un número entero y muestre por pantalla si es un número primo o no. **// SOLUCIONADO;**
+
+- Hacer un menu con unas opciones, si seleccionas una, que no acabe el proceso, que se pueda seguir eligiendo opciones (usar while y eso). Comprobar que lo que ponga la persona sea un número
+  (el número de la opción en cuestión), si es otra cosa, decir que no se puede o algo asi.
 
