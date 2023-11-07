@@ -1,9 +1,8 @@
 - DIFERENTES COMANDOS DE UBUNTU O DEMÁS:
 
--> En Ubuntu se suelen instalar los "Guest Additions" (ver que verga es esto).
+-> En Ubuntu se suelen instalar los "Guest Additions" => opciones extra para añadir funcionalidades al VirtualBox.
 
 -> Instalaciones desatendidas, los clientes deben tener activa una cosa llama PXE => se activa en la BIOS (arranque por PXE, (a través de la red)).
-
 
 -> ¿que significa apt?
 -> ¿que paquetes son gjs, irqbalance, libgjs0g?
@@ -74,13 +73,23 @@ ln -s [nombre_fichero] [nombre_enlace] => enlace blando o simbólico (solo actua
 
 
 --- Eliminación de ficheros ---
-rm lista_de_ficheros_o_directorios => elimina los ficheros que quieras (rm => remove).
-rm -i => pide confirmación antes de borrar.
-rm -f => para forzar el borrado (por si está protegido).
-rm -r => para borrar recursivamente ficheros y directorios (se supone que es peligroso).
+rm [lista_de_ficheros_o_directorios] => elimina los ficheros que quieras (rm => remove).
+rm -i [nombre_fichero] => pide confirmación antes de borrar.
+rm -f [nombre_fichero] => para forzar el borrado (por si está protegido).
+rm -r [lista_directorios] => elimina directorios que no están vacíos (ojo con esto).
+rmdir [lista_directorios] => elimina directorios que están vacíos.
+
+
 
 --- Wildcards (comodines) ---
 * => todos lo ficheros ; ejemplo: rm fich* => todos los ficheros que empiecen por "fich" me los borra. ; rm fich*txt => todos los ficheros que empiecen por fich y acaben por txt me los borra.
 ? => solo sustituye a un caracter ; ejemplo: rm fichero? => me borraría todos los ficheros que se llamen "fichero" + una letra => fichero1, fichero2.
+
+
+
+--- Copiar archivos y directorios ---
+cp [lista_ficheros_origen] [destino] => copiar ficheros a otro lugar (cp => copy).
+cp -i ... => pide confirmación.
+cp -r ... => copia todos los directorios, subdirectorios y ficheros a un destino.
 
 
