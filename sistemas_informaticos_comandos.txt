@@ -98,3 +98,12 @@ cp -r ... => copia todos los directorios, subdirectorios y ficheros a un destino
 mv [lista_ficheros_origen] [destino] => para mover archivos y directorios.
 mv -i ... => pide confirmación al moverlo.
 mv -u ... => cuando hay un archivo o directorio con el mismo nombre que en origen, solo lo mueve a destino si el de origen es mas reciente.
+
+
+
+--- Mostrar contenido de archivos ---
+cat [lista_archivos] => muestra los ficheros por pantalla (cat => concatenate).
+more ... => muestra los ficheros página a página (extensión).
+less ... => igual que more pero más potente (para ficheros grandes) (extensión de la extensión).
+head [numero] ... => muestra el encabezado de cada fichero (primeras lineas => numero) (head => encabezado).
+tail [numero] ... => muestra las últimas lineas de un fichero (footer).
