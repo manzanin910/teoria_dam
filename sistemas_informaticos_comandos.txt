@@ -8,10 +8,10 @@
 -> ¿que paquetes son gjs, irqbalance, libgjs0g?
 
 --- Comandos para actualizaciones e instalación de paquetes del sistema ---
-sudo apt update
+sudo apt update => actualizar por primera vez.
 apt list --upgradable
 sudo apt install [nombre paquete]
-sudo apt upgrade => para actualizar la version del sistema operativo (no usar de normal).
+sudo apt upgrade => para actualizar los paquetes ya instalados a la última versión disponible en los repositorios oficiales.
 sudo apt remove <nombre paquete>
 
 
