@@ -125,3 +125,9 @@ nano [nombre_archivo] => para abrir el editor de texto de nano y editar un archi
 --- Abrir un navegador y un archivo en él desde la consola ---
 firefox [ruta_de_archivo_o_url] => abre firefox con las indicaciones o sin ellas.
 firefox -new -window => abre en una nueva pestaña.
+
+
+
+
+--- Ver metainformación de un fichero (numero de caracteres, lineas...) ---
+wc [nombre_fichero] => información estadística sobre el archivo (word count)
