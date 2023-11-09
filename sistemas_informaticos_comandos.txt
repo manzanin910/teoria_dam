@@ -107,3 +107,21 @@ more ... => muestra los ficheros página a página (extensión).
 less ... => igual que more pero más potente (para ficheros grandes) (extensión de la extensión).
 head [numero] ... => muestra el encabezado de cada fichero (primeras lineas => numero) (head => encabezado).
 tail [numero] ... => muestra las últimas lineas de un fichero (footer).
+
+-> Si por ejemplo queremos fusionar varios ficheros en uno => primero agrupo todos con cat:
+cat fichero? (recuerda la wildcard de un solo caracter) > archivo_conjunto
+
+">>" => añade el contenido de un archivo inicial al final del archivo destino (a no ser que no exista anteriormente).
+">" => sobrescribe el contenido del archivo destino (a no ser que no exista anteriormente).
+
+
+
+--- Escribir sobre archivos de texto en la consola ---
+-> Para escribir en la consola sobre un archivo de texto, necesitamos usar un editor de texto, en este caso se usa Nano o Vim para poder escribir.
+nano [nombre_archivo] => para abrir el editor de texto de nano y editar un archivo de texto.
+
+
+
+--- Abrir un navegador y un archivo en él desde la consola ---
+firefox [ruta_de_archivo_o_url] => abre firefox con las indicaciones o sin ellas.
+firefox -new -window => abre en una nueva pestaña.
