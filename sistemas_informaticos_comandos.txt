@@ -128,6 +128,53 @@ firefox -new -window => abre en una nueva pestaña.
 
 
 
-
 --- Ver metainformación de un fichero (numero de caracteres, lineas...) ---
-wc [nombre_fichero] => información estadística sobre el archivo (word count)
+wc [nombre_fichero] => información estadística sobre el archivo (word count).
+
+
+
+
+--- Crear un fichero y escribir en él a la vez ---
+tee [nombre_fichero] => crea un fichero y puedes escribir sobre él.
+tee -a ... => si existe un fichero con el mismo nombre, añade el contenido al final del original.
+
+
+
+--- Ordenar lineas de un fichero por orden alfabético ---
+sort [-t delimitador] [-k num_campo] [lista_ficheros]
+sort -f ... => ignora mayúsculas y minúsculas.
+sort -r ... => invierte el orden.
+sort -n ... => ordena numéricamente, en vez de alfabéticamente.
+sort -u ... => elimina lineas repetidas.
+sort -t delimitador => indicamos que "delimitador" sea el carácter que actúe como separador de campos.
+sort -k numero_campo => numero de campo por el que se va a realizar la ordenación.
+
+
+
+--- Entrada y salida estándar (DEFINICIONES) ---
+-> Sálida estándar => la pantalla (normalmente). ------> stdin (standard in) <--- id 0 
+
+-> Entrada estándar => el teclado (normalmente). ------> stdout (standard out) <--- id 1
+
+-> Salida de errores estándar =>  por pantalla (normalmente). ------> stderr (standard error) <--- id 2
+
+
+
+--- Redirecciones de la salida estándar ---
+orden > fichero (también: orden 1> fichero). Recuerda que el 1 es el stdout (id 1), pero no se pone porque es predeterminado.
+orden >> fichero (también: orden 1> fichero).
+
+-> Ejemplos: 
+cat /etc/passwd > contraseñas.txt
+ls -l /usr >> notas.txt
+
+<----------------------------------------->
+
+orden < fichero
+orden << delimitador
+
+-> Ejemplos:
+cat < contraseñas.txt
+cat <<END <-- podemos escribir el contenido del comando cat hasta que coloque END.
+
+
