@@ -151,7 +151,7 @@ sort -k numero_campo => numero de campo por el que se va a realizar la ordenaci�
 
 
 
---- Entrada y salida estándar (DEFINICIONES) ---
+--- Entrada y salida estándar ---
 -> Sálida estándar => la pantalla (normalmente). ------> stdin (standard in) <--- id 0 
 
 -> Entrada estándar => el teclado (normalmente). ------> stdout (standard out) <--- id 1
@@ -168,13 +168,55 @@ orden >> fichero (también: orden 1> fichero).
 cat /etc/passwd > contraseñas.txt
 ls -l /usr >> notas.txt
 
-<----------------------------------------->
 
+
+--- Redirecciones de la entrada estándar ---
 orden < fichero
 orden << delimitador
 
 -> Ejemplos:
 cat < contraseñas.txt
-cat <<END <-- podemos escribir el contenido del comando cat hasta que coloque END.
+cat <<END  <-- [podemos escribir el contenido del comando cat hasta que coloque END (no tiene porque ser END, es un delimitador, se puede elegir).]
+
+
+
+--- Redirecciones de la salida de error estándar ---
+orden 2> fichero
+orden 2>> fichero
+
+ejemplos:
+ls aaa 2> errores.txt   <--[ si no existe "aaa" le coloca el error en un txt. ]
+ls -R /usr > salida.txt 2> errores.txt
+
+
+
+--- Redirecciones de la salida estándar y de error a la vez ---
+orden &> fichero
+orden &>> fichero
+
+
+
+--- Redirecciones de la salida de error hacia la salida estándar ---
+orden 2>&1
+
+ejemplos:
+ls -R /usr 2>&1
+
+
+
+--- Redirecciones de la salida y error de una orden hacia la entrada de otra orden ---
+- Se usa el operador '|' <--- se le llama tubería.
+
+ejemplos:
+ls -1 | wc -l
+
+-> ls -1 listaría el directorio actual mostrando un nombre de archivo por línea, pero no lo muestra por pantalla, se lo pasa a wc -l (word count)
+  que cuenta el número de líneas (-l => line).
+
+
+ls -1 /usr | tee listado.txt | wc -1
+
+-> listaría el directorio /usr/, se lo pasa a tee listado.txt (recuerda que 'tee' crea un fichero en el que puedes escribir, en este caso se va a escribir el listado anterior), 
+   y después, esa info se la pasa a wc -l (el resultado final será el número de líneas del fichero).
 
 
