@@ -176,7 +176,7 @@ orden << delimitador
 
 -> Ejemplos:
 cat < contraseñas.txt
-cat <<END  <-- [podemos escribir el contenido del comando cat hasta que coloque END (no tiene porque ser END, es un delimitador, se puede elegir).]
+cat << END  <-- [podemos escribir el contenido del comando cat hasta que coloque END (no tiene porque ser END, es un delimitador, se puede elegir).]
 
 
 
