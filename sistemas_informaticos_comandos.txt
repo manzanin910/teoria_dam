@@ -207,6 +207,8 @@ ls -R /usr 2>&1
 --- Redirecciones de la salida y error de una orden hacia la entrada de otra orden ---
 - Se usa el operador '|' <--- se le llama tubería.
 
+- Lo que hace una tuberia es pasar como entrada la salida del primer comando, para luego mostrar la salida del segundo comando por pantalla.
+
 ejemplos:
 ls -1 | wc -l
 
@@ -219,4 +221,10 @@ ls -1 /usr | tee listado.txt | wc -1
 -> listaría el directorio /usr/, se lo pasa a tee listado.txt (recuerda que 'tee' crea un fichero en el que puedes escribir, en este caso se va a escribir el listado anterior), 
    y después, esa info se la pasa a wc -l (el resultado final será el número de líneas del fichero).
 
+
+
+--- Aclaraciones sobre las redirecciones de entrada y salida ---
+tee < fichero.txt => Se esta redireccionando la entrada de fichero.txt a tee, y por tanto se podrá escribir.
+
+cat > fichero.txt => Se esta redireccionando 
 
