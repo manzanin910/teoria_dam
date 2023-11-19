@@ -1,15 +1,12 @@
 - ### Fecha del examen de Sistemas Informáticos:
   - Va tirando por tipo test (no está claro).
   - TEMA 1, TEMA 2 Y 3.
-  - Jueves 30 de noviembre. (22 días restantes).
+  - Jueves 30 de noviembre. (11 días restantes).
 
 
 - ### Fecha del examen de Bases de Datos:
-  - Viernes 24 de noviembre. (16 días restantes).
+  - Viernes 24 de noviembre. (5 días restantes).
 
-
-- ### Fecha del examen de FOL:
-  - Jueves 16 de noviembre. (8 días restantes).
   
 - ### Fecha del examen de Entornos de Desarrollo: ??
 - ### Fecha del examen de Programación: ??
