@@ -223,8 +223,17 @@ ls -1 /usr | tee listado.txt | wc -1
 
 
 
---- Aclaraciones sobre las redirecciones de entrada y salida ---
-tee < fichero.txt => Se esta redireccionando la entrada de fichero.txt a tee, y por tanto se podrá escribir.
+--- Procesamiento de textos ---
+cut -c <lista_de_caracteres> fichero => devuelve por pantalla la lista de caracteres.
+cut -f <lista_de_columnas> -d [delimitador] fichero => devuelve por pantalla las columnas del fichero.
 
-cat > fichero.txt => Se esta redireccionando 
+- ejemplo: cut -f1 -d: /etc/passwd
+
+grep [patrón] [lista_ficheros]
+grep -l => solo muestra los ficheros que cumplen con el patrón.
+grep -i => ignora mayúsculas y minúsculas.
+grep -w => localiza el patrón como palabra y no como parte de una cadena de texto.
+grep -v => localiza las lineas que NO cumplan con el patrón.
+
+- El comienzo de linea se indica con ^ y el fin de linea $. También hay caracteres comodín como * o listas como [abcGHp].
 
