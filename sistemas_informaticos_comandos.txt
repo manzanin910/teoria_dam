@@ -237,3 +237,13 @@ grep -v => localiza las lineas que NO cumplan con el patrón.
 
 - El comienzo de linea se indica con ^ y el fin de linea $. También hay caracteres comodín como * o listas como [abcGHp].
 
+
+
+--- Separador de comandos y ejecución condicional ---
+; => para ejecutar varios comandos. => clear;pwd;ls-l
+[primer_comando] || [segundo_comando] => funciona como un 'or' convencional.
+[primer_comando] && [segundo_comando] => si el primer comando no es correcto, el segundo no se ejecuta.
+alias imprimeDirectorio='pwd' => creo un nombre alterno para el comando pwd.
+unalias imprimeDirectorio => quitar ese nombre alterno.
+
+
