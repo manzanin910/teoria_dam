@@ -247,3 +247,16 @@ alias imprimeDirectorio='pwd' => creo un nombre alterno para el comando pwd.
 unalias imprimeDirectorio => quitar ese nombre alterno.
 
 
+
+--- Montaje de sistema de archivos ---
+mount [dispositivo] [punto_montaje]
+mount -r ... => monta el sistema de archivos con permisos de solo lectura.
+mount -w ... => monta el sistema de archivos de lectura y escritura.
+mount -t <tipo_archivos> ... => el "tipo_archivos" indica el tipo de sistema de archivos (ntfs, ext4, vfat...).
+
+- ejemplo: sudo mount -t vfat /dev/sdb1 /home/luis/pendrive 
+
+- En el ejemplo vemos que pone '-t vfat', eso es opcional, de por sí linux va a encontrar el sistema de archivos automáticamente. Después, ponemos
+  el dispositivo '/dev/sdb1/' y el punto de montaje '/home/luis/pendrive'. 
+
+
