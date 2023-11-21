@@ -117,7 +117,7 @@ cat fichero? (recuerda la wildcard de un solo caracter) > archivo_conjunto
 
 
 --- Escribir sobre archivos de texto en la consola ---
--> Para escribir en la consola sobre un archivo de texto, necesitamos usar un editor de texto, en este caso se usa Nano o Vim para poder escribir.
+-> Para escribir en la consola sobre un archivo de texto, necesitamos usar un editor de texto, en este caso se usa Nano o Vim para poder escribir (no tiene porque).
 nano [nombre_archivo] => para abrir el editor de texto de nano y editar un archivo de texto.
 
 
