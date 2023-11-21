@@ -230,10 +230,10 @@ cut -f <lista_de_columnas> -d [delimitador] fichero => devuelve por pantalla las
 - ejemplo: cut -f1 -d: /etc/passwd
 
 grep [patrón] [lista_ficheros]
-grep -l => solo muestra los ficheros que cumplen con el patrón.
-grep -i => ignora mayúsculas y minúsculas.
-grep -w => localiza el patrón como palabra y no como parte de una cadena de texto.
-grep -v => localiza las lineas que NO cumplan con el patrón.
+grep -l ... => solo muestra los ficheros que cumplen con el patrón.
+grep -i ... => ignora mayúsculas y minúsculas.
+grep -w ... => localiza el patrón como palabra y no como parte de una cadena de texto.
+grep -v ... => localiza las lineas que NO cumplan con el patrón.
 
 - El comienzo de linea se indica con ^ y el fin de linea $. También hay caracteres comodín como * o listas como [abcGHp].
 
