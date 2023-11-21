@@ -257,6 +257,48 @@ mount -t <tipo_archivos> ... => el "tipo_archivos" indica el tipo de sistema de 
 - ejemplo: sudo mount -t vfat /dev/sdb1 /home/luis/pendrive 
 
 - En el ejemplo vemos que pone '-t vfat', eso es opcional, de por sí linux va a encontrar el sistema de archivos automáticamente. Después, ponemos
-  el dispositivo '/dev/sdb1/' y el punto de montaje '/home/luis/pendrive'. 
+  el dispositivo '/dev/sdb1/' y el punto de montaje '/home/luis/pendrive'.
+
+mount (sin nada) muestra todos los sistemas de archivos montados.
+fdisk -l => muestra info sobre las particiones registradas.
+
+-> Para desmontar cualquier dispositivo se pone: 
+   unmount [dispositivo]
+   unmount [punto_partida]
+   (se puede cualquiera de las opciones)
+
+- ejemplo: unmount /dev/sdb1
+           unmount /home/luis/pendrive
+
+
+
+--- Dar nombres descriptivos a particiones ---
+- Hay comandos diferentes según el sistema de archivos:
+
+ntfslabel   <-- Para una partición NTFS.
+fatlabel    <-- Para una partición FAT.
+e2label     <-- Para ext4.
+tune2fs -L  <-- Para ext4.
+swaplabel   <-- Para una partición swap.
+
+- ejemplo: sudo e2label /dev/sda1 midisco
+
+
+
+--- Particionar ---
+fdisk --> Trabaja con MBR y GPT, es sencilla pero potente!! => fdisk [disco|partición].
+gdisk --> Trabaja solo con GPT.
+parted --> Tiene opciones adicionales y permite formatear.
+
+
+
+--- Herramientas gráficas para particionar ---
+GParted <-- La más conocida (NO viene con Ubuntu)
+GNOME-disks <-- La que viene con Ubuntu
+
+- Se puede formatear, redimensionar, reparar sistema de archivos, crear/restaurar imágenes...etc.
+
+
+
 
 
