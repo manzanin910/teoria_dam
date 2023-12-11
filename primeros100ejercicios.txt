@@ -1,3 +1,37 @@
 1. ls /bin
 2. ls /tmp
-3. ls /etc | grep '^t.$' | sort
+3. ls /etc | grep '^t' | sort -r
+4. ls /dev | grep '^tty..$'
+5. ls /dev | grep '^t.*C1$'
+6. ls -la /
+7. ls /etc | grep '^[^t]'
+8. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"^(?:[a-zA-Z0-9-])+@[a-z]+\\.(?:[a-z]){2,}$"
