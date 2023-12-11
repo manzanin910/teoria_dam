@@ -1,0 +1,3 @@
+1. ls /bin
+2. ls /tmp
+3. ls /etc | grep '^t.$' | sort
