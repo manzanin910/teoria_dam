@@ -5,7 +5,10 @@
 5. ls /dev | grep '^t.*C1$'
 6. ls -la /
 7. ls /etc | grep '^[^t]'
-8. 
+10. cd /tmp
+12. date
+16. rm -i *
+
 
 
 
